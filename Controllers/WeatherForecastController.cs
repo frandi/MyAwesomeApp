@@ -35,5 +35,13 @@ namespace MyAwesomApp.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("something")]
+        public IActionResult GetSomething()
+        {
+            return Ok("something");
+        }
+
+        
     }
 }
