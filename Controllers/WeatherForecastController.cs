@@ -39,7 +39,8 @@ namespace MyAwesomApp.Controllers
         [HttpGet("something")]
         public IActionResult GetSomething()
         {
-            return Ok("something");
+            var item = new { text = "something" };
+            return Ok(item);
         }
 
         
